@@ -1,0 +1,83 @@
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Findyourjob
+        link(rel="stylesheet" href="src/bootstrap-grid.min.css")
+        link(rel="stylesheet" type="text/css" href="src/style.css")
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&display=swap" rel="stylesheet")
+    body
+        section.section
+            header.pb-5
+                .container
+                    .row.header.align-items-center.py-3
+                        .col-2
+                            a(href="/")
+                                img(src="images/logo.svg" alt="main-logo")
+                        .col.justify-content-center.d-flex
+                            ul.nav-menu
+                                li
+                                    a.active(href="#" alt="главная") Главная
+                                li
+                                    a(href="#" alt="вакансии") Вакансии
+                                li
+                                    a(href="#" alt="компании") Компании
+                        .col-3.d-flex.justify-content-end.align-items-center
+                            a.btn-link(href="#" alt="") Войти
+                            button.btn(type="button")
+                                a(href="#" alt="регистрация") Регистрация
+                    .row
+                        .col-5
+                            h1.title Найдите удаленную<br> работу вашей мечты
+                            h2.subtitle.
+                                        Создайте резюме или отправьте отклик на вакансию<br> 
+                                        в компании с мировым именем и работайте<br> по свободному графику
+                            .input-group.d-flex
+                                input.input(type="text" placeholder="Начните поиск")
+                                button.btn-search(type="button")
+                                    img(src="images/search.svg" alt="search")
+                                    span.search-text Искать вакансии
+                            .tags.d-flex.align-items-center
+                                span.tags-label Например:
+                                ul.tags-list.d-flex
+                                    each name in ['Front-end', 'Back-end', 'Designer']
+                                        li
+                                            a.tag(href="#")=name
+                        .col-6.offset-1
+                            img.hero-image(src="images/hero-image.svg" alt="hero-image")
+        .section-category
+            .container
+                .row.category
+                    h2.section-title Категории
+                    .col-2
+                        a.card.d-flex.flex-column.align-items-center(href="#")
+                            svg(height="24" class="card-icon")
+                                use(xlink:href="images/icons.svg#brush")
+                            span Дизайн
+                    .col-2
+                        a.card.d-flex.flex-column.align-items-center(href="#")
+                            svg(height="24" class="card-icon")
+                                use(xlink:href="images/icons.svg#browser")
+                            span Разработка
+                    .col-2
+                        a.card.d-flex.flex-column.align-items-center(href="#")
+                            svg(height="24" class="card-icon")
+                                use(xlink:href="images/icons.svg#edit")
+                            span Копирайтинг
+                    .col-2
+                        a.card.d-flex.flex-column.align-items-center(href="#")
+                            svg(height="24" class="card-icon")
+                                use(xlink:href="images/icons.svg#fingerprint")
+                            span Безопасность
+                    .col-2
+                        a.card.d-flex.flex-column.align-items-center(href="#")
+                            svg(height="24" class="card-icon")
+                                use(xlink:href="images/icons.svg#camera")
+                            span Видео
+                    .col-2
+                        a.card.d-flex.flex-column.align-items-center(href="#")
+                            svg(height="24" class="card-icon")
+                                use(xlink:href="images/icons.svg#education")
+                            span Образование

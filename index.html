@@ -1,0 +1,86 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Findyourjob</title>
+    <link rel="stylesheet" href="src/bootstrap-grid.min.css"/>
+    <link rel="stylesheet" type="text/css" href="src/style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <section class="section">
+      <header class="pb-5">
+        <div class="container">
+          <div class="row header align-items-center py-3">
+            <div class="col-2"><a href="/"><img src="images/logo.svg" alt="main-logo"/></a></div>
+            <div class="col justify-content-center d-flex">
+              <ul class="nav-menu">
+                <li><a class="active" href="#" alt="главная">Главная</a></li>
+                <li><a href="#" alt="вакансии">Вакансии</a></li>
+                <li><a href="#" alt="компании">Компании</a></li>
+              </ul>
+            </div>
+            <div class="col-3 d-flex justify-content-end align-items-center"><a class="btn-link" href="#" alt="">Войти</a>
+              <button class="btn" type="button"><a href="#" alt="регистрация">Регистрация</a></button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <h1 class="title">Найдите удаленную<br> работу вашей мечты</h1>
+              <h2 class="subtitle">
+                Создайте резюме или отправьте отклик на вакансию<br> 
+                в компании с мировым именем и работайте<br> по свободному графику
+              </h2>
+              <div class="input-group d-flex">
+                <input class="input" type="text" placeholder="Начните поиск"/>
+                <button class="btn-search" type="button"><img src="images/search.svg" alt="search"/><span class="search-text">Искать вакансии</span></button>
+              </div>
+              <div class="tags d-flex align-items-center"><span class="tags-label">Например:</span>
+                <ul class="tags-list d-flex">
+                  <li><a class="tag" href="#">Front-end</a></li>
+                  <li><a class="tag" href="#">Back-end</a></li>
+                  <li><a class="tag" href="#">Designer</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6 offset-1"><img class="hero-image" src="images/hero-image.svg" alt="hero-image"/></div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <div class="section-category">
+      <div class="container">
+        <div class="row category">
+          <h2 class="section-title">Категории</h2>
+          <div class="col-2"><a class="card d-flex flex-column align-items-center" href="#">
+              <svg class="card-icon" height="24">
+                <use xlink:href="images/icons.svg#brush"></use>
+              </svg><span>Дизайн</span></a></div>
+          <div class="col-2"><a class="card d-flex flex-column align-items-center" href="#">
+              <svg class="card-icon" height="24">
+                <use xlink:href="images/icons.svg#browser"></use>
+              </svg><span>Разработка</span></a></div>
+          <div class="col-2"><a class="card d-flex flex-column align-items-center" href="#">
+              <svg class="card-icon" height="24">
+                <use xlink:href="images/icons.svg#edit"></use>
+              </svg><span>Копирайтинг</span></a></div>
+          <div class="col-2"><a class="card d-flex flex-column align-items-center" href="#">
+              <svg class="card-icon" height="24">
+                <use xlink:href="images/icons.svg#fingerprint"></use>
+              </svg><span>Безопасность</span></a></div>
+          <div class="col-2"><a class="card d-flex flex-column align-items-center" href="#">
+              <svg class="card-icon" height="24">
+                <use xlink:href="images/icons.svg#camera"></use>
+              </svg><span>Видео</span></a></div>
+          <div class="col-2"><a class="card d-flex flex-column align-items-center" href="#">
+              <svg class="card-icon" height="24">
+                <use xlink:href="images/icons.svg#education"></use>
+              </svg><span>Образование</span></a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

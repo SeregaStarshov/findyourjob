@@ -1,0 +1,205 @@
+$font-base: 'Fira Sans', 'sans-serif';
+$white: #FFFFFF;
+$black: #111238;
+$bd-grey: #F2F3F6;
+$bd-white: #FFFFFF;
+$blue-color: #1A75E8;
+$grey: #B2B2B2;
+
+@mixin card {
+    background-color: $bd-grey;
+    border-radius: 1rem;
+    border: none;
+    height: 12.8rem;
+    width: 16.6rem;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+body,
+ul {
+    padding: 0;
+    margin: 0;
+    font-family: $font-base;
+    color: $black;
+}
+.section {
+    background: $bd-grey;
+}
+.header {
+    margin-bottom: 7.5rem;
+}
+.nav-menu {
+    display: flex;
+    list-style: none;
+    li {
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        a {
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 1.9rem;
+            color: $black;
+            text-decoration: none;
+            padding: .5rem;
+            &.active {
+                color: $blue-color;
+            }
+            &:hover {
+                color: $blue-color;
+                transition: color .2s;
+            }
+        }
+    }
+}
+.col-3 {
+    a {
+        font-size: 1.6rem;
+        font-weight: normal;
+        line-height: 1.9rem;
+        color: $black;
+        text-decoration: none;
+        &.btn-link {
+            margin-right: 4rem;
+            padding: .5rem;
+        }
+    }
+    .btn {
+        background-color: $blue-color;
+        border-radius: .5rem;
+        border: none;
+        &:hover {
+            background-color: darken($blue-color, 5%);
+            box-shadow: 0 0 1rem $grey;
+        }
+        a {
+            display: inline-block;
+            color: $white;
+            padding: 1.5rem 3rem;
+        }
+    }
+}
+h1.title {
+    font-size: 4.4rem;
+    font-weight: 900;
+    line-height: 5.3rem;
+    color: $black;
+
+}
+h2.subtitle {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+    color: $black;
+    margin-bottom: 3rem;
+}
+.input-group {
+    background-color: $white;
+    box-shadow: 0px 4px 25px rgba(15, 17, 56, 0.1);
+    border-radius: .5rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+    .btn-search {
+        width: 47%;
+        height: 4.9rem;
+        cursor: pointer;
+        background-color: $blue-color;
+        border: none;
+        border-radius: .5rem;
+        img {
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+        span {
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 1.9rem;
+            color: $white;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    input[type="text"] {
+        font-size: 1.6rem;
+        font-weight: normal;
+        line-height: 1.9rem;
+        color: $grey;
+        flex-grow: 1;
+        border: none;
+        margin-left: 1.5rem;
+        &:focus {
+            outline: 1px solid $grey;
+        }
+    }
+}
+.tags-label {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: $grey;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+}
+.tags-list {
+    list-style: none;
+    li {
+        border: 1px solid $grey;
+        border-radius: .5rem;
+        padding: .5rem 1rem;
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
+        a {
+            text-decoration: none;
+            font-size: 1.4rem;
+            font-weight: normal;
+            line-height: 1.7rem;
+            color: $grey;
+        }
+    }
+}
+.section-category {
+    background-color: $bd-white;
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+}
+.category {
+    h2 {
+        color: $black;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.9rem;
+        margin-bottom: 4rem;
+    }
+    a {
+        @include card;
+        text-decoration: none;
+        &:hover {
+            background-color: $blue-color;
+            transition: background-color .5s;
+            .card-icon {
+                fill: $white;
+            }
+            span {
+                color: $white;
+            }
+        }
+        span {
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 1.9rem;
+            color: $black;
+        }
+    }
+}
+.card-icon {
+    fill: #111238;
+    margin-bottom: 1.5rem;
+    margin-top: 3.5rem;
+}
