@@ -17,6 +17,10 @@ ul {
   color: #111238;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section {
   background: #F2F3F6;
 }
@@ -111,8 +115,7 @@ h2.subtitle {
 }
 
 .input-group .btn-search {
-  width: 47%;
-  height: 4.9rem;
+  padding: 1.5rem 3rem;
   cursor: pointer;
   background-color: #1A75E8;
   border: none;
@@ -120,7 +123,6 @@ h2.subtitle {
 }
 
 .input-group .btn-search img {
-  margin-right: 1rem;
   vertical-align: middle;
 }
 
@@ -131,6 +133,7 @@ h2.subtitle {
   color: #FFFFFF;
   display: inline-block;
   vertical-align: middle;
+  margin-left: 1rem;
 }
 
 .input-group input[type="text"] {
@@ -198,8 +201,7 @@ h2.subtitle {
   background-color: #F2F3F6;
   border-radius: 1rem;
   border: none;
-  height: 12.8rem;
-  width: 16.6rem;
+  padding: 3.3rem 3.5rem;
   text-decoration: none;
 }
 
@@ -228,5 +230,316 @@ h2.subtitle {
   fill: #111238;
   margin-bottom: 1.5rem;
   margin-top: 3.5rem;
+}
+
+.vacancies-list {
+  background-color: #FFFFFF;
+}
+
+.vacancies-list .section-title {
+  color: #111238;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.9rem;
+  margin-bottom: 4rem;
+}
+
+.vacancie {
+  border: 1px solid #B2B2B2;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  padding: 3rem;
+}
+
+.vacancie .vacancie-image {
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
+  background: #FFFFFF url("../images/logo-company.png");
+  margin-right: 2rem;
+}
+
+.vacancie .salary {
+  display: block;
+  font-weight: bold;
+  font-size: 1.6rem;
+  border-radius: .5rem;
+  background-color: #1A75E8;
+  color: #FFFFFF;
+  padding: 1rem 2.5rem;
+  margin-right: 6.2rem;
+  text-align: center;
+}
+
+.vacancie-title {
+  margin-right: 4.6rem;
+}
+
+.vacancie-title h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: #111238;
+  margin-bottom: 1rem;
+}
+
+.vacancie-title span {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #B2B2B2;
+}
+
+.more {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-left: auto;
+  margin-right: 2.5rem;
+  color: #1A75E8;
+  padding: .5rem;
+}
+
+.btn-vacancie {
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+  margin-left: 55rem;
+  background-color: #1A75E8;
+  padding: 1.5rem 3rem;
+  border-radius: .5rem;
+  border: none;
+}
+
+.btn-vacancie span {
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.9rem;
+}
+
+.section-subcribe {
+  background-color: #F2F3F6;
+}
+
+.section-subcribe .wrap__section-subcribe {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  text-align: center;
+}
+
+.section-subcribe .wrap__section-subcribe .section-subcribe-title {
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 4.3rem;
+  margin-bottom: 2rem;
+}
+
+.section-subcribe .wrap__section-subcribe .section-subcribe-subtitle {
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.footer-contact {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+}
+
+.footer-contact img {
+  margin-bottom: 2rem;
+}
+
+.footer-contact .footer-text {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #B2B2B2;
+  margin-bottom: 1rem;
+}
+
+.footer-contact .copyright {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.7rem;
+  color: #B2B2B2;
+}
+
+.contacts .contact {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.9rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  color: #111238;
+}
+
+.contacts .footer-list {
+  list-style: none;
+}
+
+.contacts .footer-list .footer-list-link {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.9rem;
+  color: #111238;
+}
+
+.contacts .footer-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.info .info {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.9rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  color: #111238;
+}
+
+.info .footer-list {
+  list-style: none;
+}
+
+.info .footer-list .footer-list-link {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.9rem;
+  color: #111238;
+}
+
+.info .footer-list li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer-nav-menu .navigation {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.9rem;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  color: #111238;
+}
+
+.footer-nav-menu .list-nav-menu {
+  list-style: none;
+}
+
+.footer-nav-menu .list-nav-menu .footer-list-link {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.9rem;
+  color: #111238;
+}
+
+.footer-nav-menu .list-nav-menu li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .vacancie .vacancie-title {
+    margin-right: 1.6rem;
+  }
+  .vacancie .salary {
+    margin-right: 1.6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-title {
+    text-align: center;
+  }
+  .vacancie .vacancie-image {
+    margin-right: 0;
+  }
+  .vacancie .salary {
+    margin-right: 0;
+  }
+  .vacancie-title {
+    margin-right: 0;
+    text-align: center;
+  }
+  .tags {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .tags .tags-label {
+    margin-bottom: 1rem;
+  }
+  .more {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn-vacancie {
+    margin-left: auto;
+    margin-right: auto;
+    display: inherit;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+  }
+  .open {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .nav-menu li:not(:last-child) {
+    margin-right: 0;
+  }
+  .col-3 a.btn-link {
+    margin-right: 0;
+  }
+  .close {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    text-decoration: none;
+    text-align: right;
+    font-size: 4rem;
+    padding: 2rem;
+    color: #111238;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    text-align: center;
+  }
+  .card {
+    max-width: 20rem;
+    margin: auto;
+  }
+  .hero {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

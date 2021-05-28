@@ -12,24 +12,30 @@ html(lang="ru")
         section.section
             header.pb-5
                 .container
-                    .row.header.align-items-center.py-3
-                        .col-2
+                    .d-flex.pt-4.d-lg-none.align-items-center.justify-content-between
                             a(href="/")
                                 img(src="images/logo.svg" alt="main-logo")
-                        .col.justify-content-center.d-flex
-                            ul.nav-menu
+                            a.menu-button(href="#")
+                                img(src="images/menu-burger.svg" alt="menu-burger")
+                    .row.header.align-items-center.py-3.navbar.flex-column.flex-lg-row.justify-content-center
+                        a.close.d-lg-none(href="#") &times;
+                        .col-2.mb-5.mb-lg-0
+                            a(href="/")
+                                img(src="images/logo.svg" alt="main-logo")
+                        .col-lg.justify-content-center.d-flex.mb-5.mb-lg-0
+                            ul.nav-menu.flex-column.flex-lg-row.align-items-center
                                 li
                                     a.active(href="#" alt="главная") Главная
                                 li
                                     a(href="#" alt="вакансии") Вакансии
                                 li
                                     a(href="#" alt="компании") Компании
-                        .col-3.d-flex.justify-content-end.align-items-center
+                        .col-3.d-flex.justify-content-lg-end.align-items-center.justify-content-center.flex-column.flex-lg-row
                             a.btn-link(href="#" alt="") Войти
                             button.btn(type="button")
                                 a(href="#" alt="регистрация") Регистрация
-                    .row
-                        .col-5
+                    .row.hero
+                        .col-xxl-5.col-lg-7.col-md-9
                             h1.title Найдите удаленную<br> работу вашей мечты
                             h2.subtitle.
                                         Создайте резюме или отправьте отклик на вакансию<br> 
@@ -38,46 +44,148 @@ html(lang="ru")
                                 input.input(type="text" placeholder="Начните поиск")
                                 button.btn-search(type="button")
                                     img(src="images/search.svg" alt="search")
-                                    span.search-text Искать вакансии
+                                    span.search-text.d-none.d-md-inline-block Искать вакансии
                             .tags.d-flex.align-items-center
                                 span.tags-label Например:
                                 ul.tags-list.d-flex
                                     each name in ['Front-end', 'Back-end', 'Designer']
                                         li
                                             a.tag(href="#")=name
-                        .col-6.offset-1
+                        .col-xxl-6.offset-xxl-1.col-lg-5.mt-5.mt-lg-0
                             img.hero-image(src="images/hero-image.svg" alt="hero-image")
         .section-category
             .container
                 .row.category
                     h2.section-title Категории
-                    .col-2
+                    .col-lg-2.col-md-4.col-sm-6.mb-4.mb-lg-0
                         a.card.d-flex.flex-column.align-items-center(href="#")
                             svg(height="24" class="card-icon")
                                 use(xlink:href="images/icons.svg#brush")
                             span Дизайн
-                    .col-2
+                    .col-lg-2.col-md-4.col-sm-6.mb-4.mb-lg-0
                         a.card.d-flex.flex-column.align-items-center(href="#")
                             svg(height="24" class="card-icon")
                                 use(xlink:href="images/icons.svg#browser")
                             span Разработка
-                    .col-2
+                    .col-lg-2.col-md-4.col-sm-6.mb-4.mb-lg-0
                         a.card.d-flex.flex-column.align-items-center(href="#")
                             svg(height="24" class="card-icon")
                                 use(xlink:href="images/icons.svg#edit")
                             span Копирайтинг
-                    .col-2
+                    .col-lg-2.col-md-4.col-sm-6.mb-4.mb-lg-0
                         a.card.d-flex.flex-column.align-items-center(href="#")
                             svg(height="24" class="card-icon")
                                 use(xlink:href="images/icons.svg#fingerprint")
                             span Безопасность
-                    .col-2
+                    .col-lg-2.col-md-4.col-sm-6.mb-4.mb-lg-0
                         a.card.d-flex.flex-column.align-items-center(href="#")
                             svg(height="24" class="card-icon")
                                 use(xlink:href="images/icons.svg#camera")
                             span Видео
-                    .col-2
+                    .col-lg-2.col-md-4.col-sm-6.mb-4.mb-lg-0
                         a.card.d-flex.flex-column.align-items-center(href="#")
                             svg(height="24" class="card-icon")
                                 use(xlink:href="images/icons.svg#education")
                             span Образование
+        .section.vacancies-list
+            .container
+                h2.section-title Свежие вакансии
+                .vacancie.d-flex.align-items-center.flex-column.flex-lg-row
+                    .vacancie-image.mb-4.mb-lg-0
+                    .vacancie-title.mb-4.mb-lg-0
+                        h3.vacancie-heading Front-end разработчик
+                        span Технопарк, Казань
+                    span.salary.mb-4.mb-lg-0 65 000 ₽
+                    .tags.d-flex.align-items-center
+                                span.tags-label Требования:
+                                ul.tags-list.d-flex
+                                    each name in ['React', 'Sass', 'Figma']
+                                        li
+                                            a.tag(href="#")=name
+                    a.more(href="#") Подробнее →
+                .vacancie.d-flex.align-items-center.flex-column.flex-lg-row
+                    .vacancie-image.mb-4.mb-lg-0
+                    .vacancie-title.mb-4.mb-lg-0
+                        h3.vacancie-heading Front-end разработчик
+                        span Технопарк, Казань
+                    span.salary.mb-4.mb-lg-0 65 000 ₽
+                    .tags.d-flex.align-items-center
+                                span.tags-label Требования:
+                                ul.tags-list.d-flex
+                                    each name in ['React', 'Sass', 'Figma']
+                                        li
+                                            a.tag(href="#")=name
+                    a.more(href="#") Подробнее →
+                .vacancie.d-flex.align-items-center.flex-column.flex-lg-row
+                    .vacancie-image.mb-4.mb-lg-0
+                    .vacancie-title.mb-4.mb-lg-0
+                        h3.vacancie-heading Front-end разработчик
+                        span Технопарк, Казань
+                    span.salary.mb-4.mb-lg-0 65 000 ₽
+                    .tags.d-flex.align-items-center
+                                span.tags-label Требования:
+                                ul.tags-list.d-flex
+                                    each name in ['React', 'Sass', 'Figma']
+                                        li
+                                            a.tag(href="#")=name
+                    a.more(href="#") Подробнее →
+                .vacancie.d-flex.align-items-center.flex-column.flex-lg-row
+                    .vacancie-image.mb-4.mb-lg-0
+                    .vacancie-title.mb-4.mb-lg-0
+                        h3.vacancie-heading Front-end разработчик
+                        span Технопарк, Казань
+                    span.salary.mb-4.mb-lg-0 65 000 ₽
+                    .tags.d-flex.align-items-center
+                                span.tags-label Требования:
+                                ul.tags-list.d-flex
+                                    each name in ['React', 'Sass', 'Figma']
+                                        li
+                                            a.tag(href="#")=name
+                    a.more(href="#") Подробнее →
+                button.btn-vacancie(type="button")
+                    span Больше вакансий
+        section.section-subcribe
+            .wrap__section-subcribe
+                h2.section-subcribe-title Подпишитесь на рассылку<br> с новыми вакансиями
+                p.section-subcribe-subtitle.
+                                            Мы отправляем по одному письму в неделю<br>
+                                            с подходящими вам вакансиями
+                .input-group.d-flex
+                                input.input(type="text" placeholder="E-mail")
+                                button.btn-search(type="button")
+                                    img(src="images/email.svg" alt="search")
+                                    span.search-text.d-none.d-md-inline-block Подписаться
+        footer.footer
+            .container
+                .row.footer-contact
+                    .col-lg-3.col-sm-6.mb-5.mb-lg-0.col-7.mx-auto
+                        img(src="images/logo.svg" alt="main-logo")
+                        p.footer-text Сайт с вакансиями для тех,<br> кто ищет удаленную работу
+                        span.copyright © 2021
+                    .col-lg-3.col-sm-6.mb-5.mb-lg-0.col-7.mx-auto.contacts
+                        h3.contact Свяжитесь с нами
+                        ul.footer-list
+                            li.footer-list-item
+                                a.footer-list-link(href="tel:+78002020300") 8 800 20 20 300
+                            li.footer-list-item
+                                    a.footer-list-link(href="mailto:info@findyourjob.net") info@findyourjob.net
+                    .col-lg-3.col-sm-6.mb-5.mb-lg-0.col-7.mx-auto.info
+                        h3.info Информация
+                        ul.footer-list
+                            li.footer-list-item
+                                a.footer-list-link(href="#") Обработка данных
+                            li.footer-list-item
+                                    a.footer-list-link(href="#") Конфиденциальность
+                            li.footer-list-item
+                                    a.footer-list-link(href="#") Публичная оферта
+                    .col-lg-3.col-sm-6.mb-5.mb-lg-0.col-7.mx-auto
+                        nav.footer-nav-menu
+                            h3.navigation Навигация по сайту
+                            ul.list-nav-menu
+                                li.footer-nav-menu__list-item
+                                    a.footer-list-link(href="#") Вакансии
+                                li.footer-nav-menu__list-item
+                                    a.footer-list-link(href="#") Компании
+                                li.footer-nav-menu__list-item
+                                    a.footer-list-link(href="#") Контакты
+        script(src="js/main.js")

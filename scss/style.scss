@@ -10,8 +10,9 @@ $grey: #B2B2B2;
     background-color: $bd-grey;
     border-radius: 1rem;
     border: none;
-    height: 12.8rem;
-    width: 16.6rem;
+    //height: 12.8rem;
+    //width: 16.6rem;
+    padding: 3.3rem 3.5rem;
 }
 *,
 *:before,
@@ -27,6 +28,9 @@ ul {
     margin: 0;
     font-family: $font-base;
     color: $black;
+}
+img {
+    max-width: 100%;
 }
 .section {
     background: $bd-grey;
@@ -106,14 +110,12 @@ h2.subtitle {
     padding: 1rem;
     margin-bottom: 2.5rem;
     .btn-search {
-        width: 47%;
-        height: 4.9rem;
+        padding: 1.5rem 3rem;
         cursor: pointer;
         background-color: $blue-color;
         border: none;
         border-radius: .5rem;
         img {
-            margin-right: 1rem;
             vertical-align: middle;
         }
         span {
@@ -123,6 +125,7 @@ h2.subtitle {
             color: $white;
             display: inline-block;
             vertical-align: middle;
+            margin-left: 1rem;
         }
     }
     input[type="text"] {
@@ -202,4 +205,291 @@ h2.subtitle {
     fill: #111238;
     margin-bottom: 1.5rem;
     margin-top: 3.5rem;
+}
+.vacancies-list {
+    background-color: $bd-white;
+    .section-title {
+        color: $black;
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: 2.9rem;
+        margin-bottom: 4rem;
+    }
+}
+.vacancie {
+    border: 1px solid $grey;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    padding: 3rem;
+    .vacancie-image {
+        width: 10rem;
+        height: 10rem;
+        border: 1px solid lighten($grey, 20%);
+        border-radius: 50%;
+        background: $white url("../images/logo-company.png");
+        margin-right: 2rem;
+    }
+    .salary {
+        display: block;
+        font-weight: bold;
+        font-size: 1.6rem;
+        border-radius: .5rem;
+        background-color: $blue-color;
+        color: $white;
+        padding: 1rem 2.5rem;
+        margin-right: 6.2rem;
+        text-align: center;
+    }
+}
+.vacancie-title {
+    margin-right: 4.6rem;
+    h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        color: $black;
+        margin-bottom: 1rem;
+    }
+    span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: $grey;
+    }
+}
+.more {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-left: auto;
+    margin-right: 2.5rem;
+    color: $blue-color;
+    padding: .5rem;
+}
+.btn-vacancie {
+    margin-top: 2rem;
+    margin-bottom: 8rem;
+    margin-left: 55rem;
+    background-color: $blue-color;
+    padding: 1.5rem 3rem;
+    border-radius: .5rem;
+    border: none;
+    span {
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: normal;
+        line-height: 1.9rem;
+    }
+}
+.section-subcribe {
+    background-color: $bd-grey;
+    .wrap__section-subcribe {
+        max-width: 46rem;
+        margin: 0 auto;
+        padding-top: 9rem;
+        padding-bottom: 9rem;
+        text-align: center;
+        .section-subcribe-title {
+            font-size: 3.6rem;
+            font-weight: 900;
+            line-height: 4.3rem;
+            margin-bottom: 2rem;
+        }
+        .section-subcribe-subtitle {
+            font-size: 1.8rem;
+            font-weight: normal;
+            line-height: 2.5rem;
+            margin-bottom: 4rem;
+        }
+    }
+}
+.footer-contact {
+    padding-top: 7rem;
+    padding-bottom: 10rem;
+    img {
+        margin-bottom: 2rem;
+    }
+    .footer-text {
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 1.7rem;
+        color: $grey;
+        margin-bottom: 1rem;
+    }
+    .copyright {
+        font-size: 1.2rem;
+        font-weight: normal;
+        line-height: 1.7rem;
+        color: $grey;
+    }
+}
+.contacts {
+    .contact {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+        color: $black;
+    }
+    .footer-list {
+        list-style: none;
+        .footer-list-link {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 1.9rem;
+            color: $black;
+        }
+        li:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+.info {
+    .info {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+        color: $black;
+    }
+    .footer-list {
+        list-style: none;
+        .footer-list-link {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 1.9rem;
+            color: $black;
+        }
+        li:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+.footer-nav-menu {
+    .navigation {
+        display: block;
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+        color: $black;
+    }
+    .list-nav-menu {
+        list-style: none;
+        .footer-list-link {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 1.9rem;
+            color: $black;
+        }
+        li:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+@media (max-width: 1200px) {
+    .vacancie {
+        .vacancie-title {
+            margin-right: 1.6rem;
+        }
+        .salary {
+            margin-right: 1.6rem;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .section-title {
+        text-align: center;
+    }
+    .vacancie {
+        .vacancie-image {
+            margin-right: 0;
+        }
+        .salary {
+            margin-right: 0;
+        }
+    }
+    .vacancie-title {
+        margin-right: 0;
+        text-align: center;
+    }
+    .tags {
+        flex-direction: column;
+        margin-bottom: 1rem;
+        .tags-label {
+            margin-bottom: 1rem;
+        }
+    }
+    .more {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn-vacancie {
+        margin-left: auto;
+        margin-right: auto;
+        display: inherit;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: $bd-white;
+        transform: translateX(-100%);
+        transition: transform .3s;
+    }
+    .open {
+        transform: translateX(0);
+    }
+    .nav-menu {
+        li {
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+    .col-3 {
+        a {
+            &.btn-link {
+                margin-right: 0;
+            }
+        }
+    }
+    .close {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        text-decoration: none;
+        text-align: right;
+        font-size: 4rem;
+        padding: 2rem;
+        color: $black;
+    }
+}
+@media (max-width: 576px) {
+    .footer {
+        text-align: center;
+    }
+    .card {
+        max-width: 20rem;
+        margin: auto;
+    }
+    .hero {
+        text-align: center;
+    }
 }
