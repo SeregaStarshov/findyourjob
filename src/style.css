@@ -372,6 +372,10 @@ h2.subtitle {
   color: #B2B2B2;
 }
 
+.footer-contact .footer-list-link {
+  text-decoration: none;
+}
+
 .contacts .contact {
   display: block;
   font-size: 1.6rem;
