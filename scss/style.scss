@@ -413,6 +413,11 @@ h2.subtitle {
     .section-title {
         text-align: center;
     }
+    .header {
+        .col-lg-4 {
+            width: fit-content;
+        }
+    }
     .vacancie {
         .vacancie-image {
             margin-right: 0;
@@ -458,6 +463,11 @@ h2.subtitle {
     }
     .nav-menu {
         li {
+            a {
+                display: inline-block;
+                font-size: 2rem;
+                margin-bottom: 3rem;
+            }
             &:not(:last-child) {
                 margin-right: 0;
             }
@@ -467,16 +477,18 @@ h2.subtitle {
         a {
             &.btn-link {
                 margin-right: 0;
+                margin-bottom: 2rem;
+                font-size: 2rem;
             }
         }
     }
     .close {
         position: fixed;
-        top: 1rem;
-        right: 1rem;
+        top: .2rem;
+        right: .2rem;
         text-decoration: none;
         text-align: right;
-        font-size: 4rem;
+        font-size: 5rem;
         padding: 2rem;
         color: $black;
     }
